@@ -23,9 +23,13 @@
 # Создание файла .exe для Windows
 Для удобства обычных пользователей можно сделать один исполняемый файл включающий в себя все веса и библиотеки.
 Этапы создания файла .exe:
-1) ```pip3 install pyinstaller```
-2) ```pyinstaller --onefile --add-data "RNN.pth;." --add-data "W2V.model;." For_user.py```
-3) Перейти в папку `dist` и выполнить файл `For_user`
+1) ```
+   pip3 install pyinstaller
+   ```
+5) ```
+   pyinstaller --onefile --add-data "RNN.pth;." --add-data "W2V.model;." For_user.py
+   ```
+7) Перейти в папку `dist` и выполнить файл `For_user`
 
 # Зависимости
 - python (предпочтительнее 3.11)
